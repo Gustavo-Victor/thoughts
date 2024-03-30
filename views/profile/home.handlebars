@@ -1,0 +1,18 @@
+<div class="profile-container center">
+    {{#with user}}
+        <h1>Profile</h1>
+        <h3>{{full_name}}</h3>
+        <p><strong>Email: </strong>{{email}}</p>
+        <a href="/profile/edit-password" class="btn">Edit Password</a>
+        <div class="align-user-buttons">             
+            <a href="/profile/edit" class="btn">Edit Profile</a>
+            <a href="#" class="btn open-modal-btn">Delete Account</a>
+            {{!-- <a href="/profile/delete" class="btn">Delete Account</a> --}}
+            {{!-- <form action="/profile/delete" method="post" id="form-delete-user">
+                <input type="hidden" name="id" id="id" value="{{id}}" />
+                <button type="submit" class="btn">Delete Account</button>
+            </form> --}}
+        </div>
+        
+    {{/with}}
+</div>

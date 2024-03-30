@@ -1,0 +1,19 @@
+<div class="form-container">
+    <a href="/profile">Go back</a>
+    <h1>Edit User</h1>
+    
+    {{#with user}}
+        <form action="/profile/edit" method="post" id="update-user-form" class="form">
+            <input type="hidden" name="id" id="id" value="{{id}}" />
+            <div class="form-control">
+                <label for="full_name">Name: </label>
+                <input type="text" name="full_name" value="{{full_name}}" id="full_name" placeholder="Enter your full name..." maxlength="80" />
+            </div>
+            <div class="form-control">
+                <label for="email">Email: </label>
+                <input type="email" name="email" value="{{email}}" id="email" placeholder="Enter your email..." maxlength="80" />
+            </div>
+            <button type="submit">Edit</button>
+        </form>
+    {{/with}}
+</div>

@@ -1,0 +1,54 @@
+<div class="home-header">
+    {{#if search}}
+        <h1>You are looking for: <span>{{search}}</span></h1>
+        {{#if thoughts_qtd}}
+            <p>{{thoughts_qtd}} results were found for that search.</p>
+        {{else}}
+            <p>No results found for that search.</p>
+        {{/if}}
+    {{else}}
+        <h1>Registered Thoughts</h1>
+    {{/if}}
+    <form action="/" method="get" class="form-search">
+        <input type="text" name="search" id="search" placeholder="What are you looking for?"/>
+        <button type="submit" class="btn">Search</button>
+    </form>
+    <div class="order-container">
+        <span>Order by:</span>
+        
+        <div class="align-order">
+            <form action="/" method="get">
+                <input type="hidden" name="search" value="{{search}}" />
+                <input type="hidden" name="order" value="new" />
+                <button type="submit"><i class="bi bi-arrow-up"></i></button>
+            </form>
+            <form action="/" method="get">
+                <input type="hidden" name="search" value="{{search}}" />
+                <input type="hidden" name="order" value="old">
+                <button type="submit"><i class="bi bi-arrow-down"></i></button>
+            </form>            
+        </div>
+        
+        <a href="/">Reset</a>
+    </div>
+</div>
+<div class="thoughts-container">
+    {{#if empty}}
+        <p>No results...</p>
+    {{else}}
+        {{#each thoughts}}
+            <figure>
+                <blockquote>
+                    "{{this.title}}"
+                </blockquote>
+                <figcaption>by 
+                    {{#if this.User.full_name}}
+                        <span>{{this.User.full_name}}</span>
+                    {{else}}
+                        <span>Someone</span>
+                    {{/if}}    
+                </figcaption>
+            </figure>
+        {{/each}}
+    {{/if}}
+</div>
