@@ -356,6 +356,7 @@ body input, body button {
     align-items: center;
     max-width: 80%;
     margin: 0.5rem auto 1rem; 
+    gap: 1rem; 
 }
 
 
