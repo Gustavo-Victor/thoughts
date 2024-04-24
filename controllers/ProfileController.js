@@ -1,3 +1,4 @@
+import { where } from "sequelize";
 import { User } from "../models/User.js";
 import bcrypt from "bcryptjs"; 
 
@@ -46,6 +47,14 @@ export class ProfileController {
             req.flash("error", "Fill out all fields."); 
             res.redirect("/profile/edit"); 
             return ;
+        }
+
+        // check if user already exists
+        const userExists = await User.findOne({raw: true, where: {email: email}}); 
+        if(userExists && userExists.id != id) {
+            req.flash("error", "This email is already registered");
+            res.redirect("/profile/edit"); 
+            return ; 
         }
 
         const user = { full_name, email }; 
