@@ -33,11 +33,11 @@ Clique [aqui](https://remarkable-bienenstitch-3f7da2.netlify.app/) para conferir
 
 ## ⚙️ Funcionalidades
 
-[x] Cadastro de usuários
-[x] Login de usuários
-[x] Gerenciamento de pefil de usuários
-[x] Gerenciamento de pensamentos de usuários
-[x] Listagem de pensamentos de usuários com filtros
+- [x] Cadastro de usuários
+- [x] Login de usuários
+- [x] Gerenciamento de pefil de usuários
+- [x] Gerenciamento de pensamentos de usuários
+- [x] Listagem de pensamentos de usuários com filtros
 
 
 ## 🛠 Tecnologias e Ferramentas
