@@ -23,7 +23,7 @@ Este projeto é uma aplicação web que permite ao usuário gerenciar e comparti
 
 Projeto baseado no curso de Node.js da empresa ['Hora de Codar'](https://horadecodar.com.br/). 
 
-Clique [aqui](https://remarkable-bienenstitch-3f7da2.netlify.app/) para conferir como ficou a aplicação rodando no [Netlify](https://app.netlify.com/).  
+Clique [aqui](https://thoughts-7avl.onrender.com) para conferir como ficou a aplicação hospedada na plataforma [Render](https://render.com/).  
 
 
 ## 🎨 Layout
