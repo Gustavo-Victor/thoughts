@@ -33,7 +33,7 @@
     "express-flash": "^0.0.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
-    "mysql2": "^3.9.2",
+    "mysql2": "^3.9.8",
     "pg": "^8.11.4",
     "postgres": "^3.4.4",
     "sequelize": "^6.37.1",
